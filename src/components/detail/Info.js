@@ -1,7 +1,7 @@
 
 const Info = () => {
     return (
-    <div className="pdp-info">
+    <div className="detail-info">
     </div>
     );
 }
