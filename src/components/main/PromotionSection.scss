@@ -17,8 +17,10 @@
         }
 
         .pro-cd-wrap {
-            @include flex-layout(space-between);
+            @include flex-layout(row,space-between);
             width: 100%;
+            max-width: 1120px;
+            padding: 10rem 0;
             .pro-card {
                 position: relative;
                 width: 500px;
