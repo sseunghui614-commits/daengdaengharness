@@ -8,6 +8,8 @@ import { useEffect, useState, useRef } from "react";
 const BannerSection = () => {
     // 0: 1번, 1: 2번, 2: 3번, 3: (복제 1번)
     const [idx, setIdx] = useState(0);
+
+    // 오류 테스트 
     
     // 트랜지션 제어용 (true면 애니메이션 켜짐, false면 꺼짐)
     const [isAnimating, setIsAnimating] = useState(true);
