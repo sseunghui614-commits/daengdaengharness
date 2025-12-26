@@ -46,7 +46,7 @@ const ProductCard = ({item}) => {
             <div className="card-bottom">
                 <div className="bottom-all">
                 <p>{item.prod_name}</p>
-                <p>￦{item.origin_price}</p>
+                <p>￦{Number(item.origin_price).toLocaleString()}</p>
                 </div>
                 <img src={like} 
                 onClick={()=>{alert('로그인후 이용 가능합니다.')}}/>
