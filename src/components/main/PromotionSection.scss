@@ -10,6 +10,7 @@
         .pro-title {
             @include font-title-2;
             color: var(--dark-brown);
+            margin-top: 10rem;
 
             span {
                 color: var(--main-yellow);
@@ -20,17 +21,18 @@
             @include flex-layout(row,space-between);
             width: 100%;
             max-width: 1120px;
-            padding: 10rem 0;
+            padding: 5rem 0;
+            margin-bottom: 10rem;
             .pro-card {
                 position: relative;
                 width: 500px;
                 height: 300px;
-                background-color: var(--soft-beige);
+                background-color: var(--hover-extra-light-blue);
                 border-radius: 1rem;
                 padding: 1rem 2rem;
 
                 .cd-title {
-                    color: var(--green);
+                    color: var(--white);
                     @include font-h2-2;
                     text-align: center;
                 }
@@ -45,13 +47,13 @@
                     span {
                         font-size: 2rem;
                         padding: 0.5rem;
-                        color: var(--green);
+                        color: var(--color-deep-blue);
                     }
                 }
 
                 .cd-btn {
-                    @include btn-style(var(--green),
-                        var(--hover-light-green));
+                    @include btn-style(var(--hover-light-green),
+                        var(--hover-light-blue));
                     font-size: 2rem;
                     font-weight: 900;
                     display: inline-block;

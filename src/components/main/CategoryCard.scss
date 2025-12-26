@@ -2,8 +2,9 @@
 @use '../../assets/scss/fonts' as *;
 
 #category-card {
-    margin: 10rem ;
+    margin: 5rem;
     @include flex-layout(column);
+
 
     .category-cd-title {
         @include font-title-2;
@@ -22,16 +23,19 @@
         gap: 3rem;
         max-width: 1120px;
         margin-top: 5rem;
+        margin-bottom: 10rem;
 
 
         .cate-card {
             .category-cd-item {
-                @include flex-layout(column );
+                @include flex-layout(column);
                 width: 250px;
                 height: 400px;
                 overflow: hidden;
                 box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
                 border-radius: 1rem;
+                background-color: var(--white);
+
 
                 .cd-title {
                     @include font-s-2;

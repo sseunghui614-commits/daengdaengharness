@@ -1,7 +1,7 @@
 import "./BannerSection.scss";
-import bannerImg01 from "../../assets/images/banner/Banner01.png"
-import bannerImg02 from "../../assets/images/banner/Banner02.png"
-import bannerImg03 from "../../assets/images/banner/Banner03.png"
+import bannerImg01 from "../../assets/images/banner/Banner01.png";
+import bannerImg02 from "../../assets/images/banner/Banner02.png";
+import bannerImg03 from "../../assets/images/banner/Banner03.png";
 
 
 
@@ -11,6 +11,8 @@ import { useEffect, useState, useRef } from "react";
 const BannerSection = () => {
     // 0: 1번, 1: 2번, 2: 3번, 3: (복제 1번)
     const [idx, setIdx] = useState(0);
+
+    // 오류 테스트 
     
     // 트랜지션 제어용 (true면 애니메이션 켜짐, false면 꺼짐)
     const [isAnimating, setIsAnimating] = useState(true);
@@ -35,9 +37,10 @@ const BannerSection = () => {
             setTimeout(() => {
                 setIsAnimating(false); // 애니메이션 끄기 (순간이동을 위해)
                 setIdx(0); // 진짜 1번(인덱스 0)으로 위치 초기화
-            }, 3000); 
+            }, 500); 
         }
     }, [idx]);
+
     return (
         <section id="sec-banner">
             <div className="bnr-wrap">
@@ -62,13 +65,15 @@ const BannerSection = () => {
                         </div>
                         <img src={bannerImg03} alt="배너 이미지 03" />
                     </div>
-                    <div className="bnr-sec01">
+                    
+                    {/* 마지막에 붙은 1번 복제본 */}
+                    <div className="bnr-sec01 clone">
                         <img src={bannerImg01} alt="배너 이미지 01(복제)" />
                     </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default BannerSection
+export default BannerSection;
