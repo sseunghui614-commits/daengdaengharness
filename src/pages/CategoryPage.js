@@ -20,10 +20,8 @@ const CategoryPage = () => {
     const containerRef = useRef(null);
     const prodRef = useRef(null);
 
-//best가 true인 애들만 보이게
     useEffect(()=>{
-        window.scrollTo(0,0);
-
+//best가 true인 애들만 보이게
         const items = Products.Product.filter(
         item => item.best === true && item.type === params.category
         );

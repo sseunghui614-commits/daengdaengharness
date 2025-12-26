@@ -48,7 +48,8 @@ const ProductCard = ({item}) => {
                 <p>{item.prod_name}</p>
                 <p>￦{item.origin_price}</p>
                 </div>
-                <img src={like} />
+                <img src={like} 
+                onClick={()=>{alert('로그인후 이용 가능합니다.')}}/>
             </div>
         </div>
     )

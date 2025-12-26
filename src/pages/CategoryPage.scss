@@ -142,7 +142,7 @@
             margin: 0;
             text-align: left;
             font-size: 16px;
-            @include font-s-1 ;
+            @include font-s-2 ;
           }
         }
       }
@@ -205,9 +205,12 @@
     .info-text{
       p{
       text-align: center;
-      font-size: 24px;
+      
       padding: 3rem;
-      word-spacing : 0.8rem;
+      word-spacing : 0.3rem;
+      letter-spacing: 0.2rem;
+      @include font-h2-1 ;
+      font-size: 16px;
       }
     }
   }
