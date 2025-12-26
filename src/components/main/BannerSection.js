@@ -3,6 +3,9 @@ import bannerImg01 from "../../assets/images/banner/Banner01.png";
 import bannerImg02 from "../../assets/images/banner/Banner02.png";
 import bannerImg03 from "../../assets/images/banner/Banner03.png";
 
+
+
+const BannerSection = () => {
 import { useEffect, useState, useRef } from "react"; 
 
 const BannerSection = () => {
@@ -58,7 +61,7 @@ const BannerSection = () => {
                     </div>
                     <div className="bnr-sec03">
                         <div className="bnr-btn">
-                            <a href="#">자세히 보러가기 →</a>
+                            <a href="/guide">자세히 보러가기 →</a>
                         </div>
                         <img src={bannerImg03} alt="배너 이미지 03" />
                     </div>

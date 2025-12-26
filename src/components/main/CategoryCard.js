@@ -1,8 +1,13 @@
+import React from 'react'
 
 import "./CategoryCard.scss";
 import productsData from "../../assets/data/products.json";
 
 const CategoryCard = () => {
+  return (
+    <div>CategoryCard</div>
+  )
+}
 
     const products = productsData?.Product ?? [];
 

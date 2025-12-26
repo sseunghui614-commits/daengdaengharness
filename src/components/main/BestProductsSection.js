@@ -13,7 +13,7 @@ import cdImg03Hover from "../../assets/images/Harness/Ytype2-1.png";
 import cdImg04 from "../../assets/images/Harness/Ytype1-2.png";
 import cdImg04Hover from "../../assets/images/Harness/Ytype1-1.png";
 
-
+import { useNavigate } from "react-router-dom";
 
 const BestProductsSection = () => {
     const products = [
